@@ -1,7 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+body {
+	font-family: 'Garamond', sans-serif;
+	font-size: 18px;
+}
 
+.header {
+	background-color: #6388cb;
+	padding: 15px 0 15px 0;
+}
+
+.slogan {
+	padding-top: 10px;
+	padding-left: 40px;
+	color: #fff;
+}
+.banner{
+	background-image: url(images/img-1.jpg);
+	height: 650px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.forma{
+	background-color: #6388cb;
+	 display: inline-block;
+	width: 250px;
+	height: 450px;
+	margin-top: 150px;
+}
+input{
+	
+}
