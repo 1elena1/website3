@@ -15,8 +15,7 @@ body {
 }
 
 .slogan {
-	padding-top: 10px;
-	padding-left: 40px;
+
 	color: #fff;
 }
 .banner{
@@ -26,10 +25,28 @@ body {
 	background-size: cover;
 }
 
+.line{
+	background-image: url(images/bg-legend.png);
+	background-position: left, right;
+    background-repeat: repeat-x;
+
+}
+
+.yellow {
+	margin-top: 30px;
+	background-image: url(images/bg-form-foot.png);
+	background-repeat: repeat-x;
+	height: 100px;
+
+	
+}
+
 .fon{
 	background-color: #6388cb;
 	height: 450px;
-	margin-top: 130px;
+	margin-top: 100px;
+	color: #fff;
+	text-align: center;
 	
 }
 input{
@@ -42,5 +59,7 @@ button {
 	background-color: #1e1e65;
 	padding: 5px;
 	border-radius: 5px;
-	
+	color: #fff;	
+margin-top: 30px;
 }
+
