@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,500&family=Oswald&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -18,48 +20,199 @@ body {
 
 	color: #fff;
 }
-.banner{
+
+.banner {
 	background-image: url(images/img-1.jpg);
 	height: 650px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
+	align-items: center;
 }
 
-.line{
+
+.line {
 	background-image: url(images/bg-legend.png);
 	background-position: left, right;
-    background-repeat: repeat-x;
+	background-repeat: repeat-x;
+
+}
+
+.line b {
+	background-color: #6388cb;
+	display: inline-block;
+	padding: 0 15px;
+
 
 }
 
 .yellow {
-	margin-top: 30px;
 	background-image: url(images/bg-form-foot.png);
 	background-repeat: repeat-x;
 	height: 100px;
+	margin: 30px -45px;
 
-	
 }
 
-.fon{
+.yellow::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 10px solid #b17e1e;
+	border-left: 15px solid transparent;
+	position: absolute;
+	left: -15px;
+	bottom: 92px;
+
+}
+
+.yellow::after {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 13px 15px 0 0px;
+	border-color: #b17e1e transparent;
+	position: absolute;
+	left: 475px;
+	bottom: 89px;
+
+}
+
+
+.zagolovok{
+	padding-top: 50px;
+	text-align: center;
+
+}
+ .zagolovok> h2 {
+	color: #6388cb;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+.zagolovok> b{
+	text-align: center;
+	color: #868b8b;
+}
+
+
+
+.fon {
 	background-color: #6388cb;
-	height: 450px;
-	margin-top: 100px;
 	color: #fff;
 	text-align: center;
-	
+	padding: 30px;
 }
-input{
+
+input {
 	background-color: #41416f;
 	padding: 5px;
 	margin: 5px;
 	width: 100%;
-}
-button {
-	background-color: #1e1e65;
-	padding: 5px;
-	border-radius: 5px;
-	color: #fff;	
-margin-top: 30px;
+	border: none;
+	outline: none;
+	color: #fff;
 }
 
+input:focus {
+	background-color: #1e1e65;
+}
+
+button {
+	background-color: #1e1e65;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #fff;
+	margin-top: 30px;
+	border: none;
+	font-family: 'Oswald', sans-serif;
+}
+
+button:hover {
+	background-color: #2a5cb5;
+}
+/*2 блок*/
+
+.courses{
+	background-image: url(images/01.png);
+}
+
+
+
+.znack {
+	background-color: #41416f;
+text-align: center;
+	height: 200px;
+	padding: 45px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	position: relative;
+	
+}
+
+.znack::before{
+	content: '';
+	position: absolute;
+	left: 115px;
+	top: 200px;
+	bottom: 0px;
+	border: 10px solid transparent; 
+	border-top: 10px solid #41416f;
+}
+
+.courses h4{
+	color: #41416f;
+	font-weight: bold;
+	text-align: center;
+}
+.courses p{
+	text-align: center;
+}
+
+.info{
+display: flex;
+align-items: center;
+
+}
+.foto img{
+width: 100%;
+
+}
+
+.info p{
+	text-align: center;
+}
+
+.opisanie{
+	background-image: url(images/testimonials-bg.jpg);
+	text-align: center;
+	height: 550px;
+	font-style: italic;
+	font-size: 24px;
+}
+
+/*блок 3*/
+
+
+
+.avatar{
+	width:200px;
+	height: 200px;
+	border-radius: 100%;
+	overflow: hidden;
+	margin: 15px auto;
+	
+}
+
+.avatar b{
+
+}
+
+.biografiya img{
+	width: 100%;
+}
+
+.border{
+padding-top: 10px;
+}
