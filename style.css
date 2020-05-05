@@ -79,7 +79,7 @@ body {
 .zagolovok {
 	padding-top: 50px;
 	text-align: center;
-
+	margin-bottom: 20px;
 }
 
 .zagolovok > h2 {
@@ -141,23 +141,54 @@ button:hover {
 .znack {
 	background-color: #41416f;
 	text-align: center;
-	height: 200px;
 	padding: 30px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	position: relative;
 
 }
+.znack:hover{
+	 background-color: #ffc21b;
+}
+
+
+.anime:hover{
+	 animation: 0.82s anime linear  both; 
+	
+color: #1e1e65;
+	
+}
+@keyframes anime {
+   
+10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+	
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
 
 .znack::before {
 	content: '';
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	/*	top: 200px;*/
 	bottom: -20px;
 	border: 10px solid transparent;
 	border-top: 10px solid #41416f;
+	
 }
 
 .courses h4 {
@@ -181,12 +212,36 @@ button:hover {
 
 }
 
+.foto{
+
+}
+
+.foto:hover{
+
+  background-color: #41416f;
+ transition: all 2s ease;
+ }
+
+.foto:hover img {
+ background-color: #41416f;
+  background: transparent;
+  visibility: hidden;
+	
+}
+
+.animazija:hover{
+	color: #2f2fb5;
+
+}
+
+
 .info p {
 	text-align: center;
 }
 
 .biografiya {
 	background-image: url(images/testimonials-bg.jpg);
+	background-repeat: no-repeat;
 	text-align: center;
 	height: 550px;
 	font-style: italic;
@@ -218,10 +273,9 @@ button:hover {
 }
 
 /*блок 4*/
-.video {
-}
+.video {}
 
-.vid_item{
+.vid_item {
 	display: flex;
 	justify-content: center;
 }
@@ -234,117 +288,196 @@ button:hover {
 
 }
 
-.one  {
 
-}
-.one ul{
+.one ul {
 	display: inline-block;
 	margin: 50px;
-list-style-image: url(images/bul-list.png);
-}
-.one li{
-	
+	list-style-image: url(images/bul-list.png);
 }
 
 
-.spisok{
-	display: flex;
-	
-	justify-content: space-between;
-	align-items: center;
-}
 
-.spisok span{
-	color: #ffa700;
-	font-style: italic;
-	font-weight: bold;
-	font-size: 28px;
-}
 
-.spisok button{
-	margin-bottom: 20px;
-
-}
-
-.block ul {
-	text-align: center;
+.bg_blue {
 	background: #6388cb;
+}
+
+
+ul {
+	text-align: center;
 	list-style-type: none;
 }
 
-.block li {
-	display: inline-block;
-	color: #fff;
-	margin: 5px;
-	
+.block {
+	margin: 15px;
 }
+
+
+.block li {
+	padding: 5px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.block h3 {
+	color: #ffc21b;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.block button {
+	position: relative;
+	left: 50%;
+	bottom: 15px;
+	transform: translate(-50%, 0);
+}
+
+
+
 
 /*блок 5*/
 
-.email{
+.email {
 	background-color: #ffc21b;
 }
 
-.email input{
+.email input {
 	width: 200px;
 	background-color: #fff;
 }
 
-.email p{
-color: #fff;
+.email p {
+	color: #fff;
 	font-weight: bold;
 	margin-top: 20px;
-	
+
 }
-.email .forma{
+
+.email .forma {
 	margin-bottom: 20px;
 }
 
-.email button{
+.email button {
 	background-color: #a0852c;
 }
 
 /*блок 6*/
 
-.footer{
+.footer {
 	background-color: #0b0b0b;
 	color: #fff;
+	padding: 20px;
 }
 
-.footer h3{
+.footer h3 {
 	color: #ffc21b;
 
 }
 
-.materials{
-list-style-image:url(images/signs_2.png);
+
+
+.materials li {
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.materials li:before {
+	content: "+";
+	color: #fff;
+	margin-right: 5px;
+}
+
+.icons{
+	
+}
+
+.icon {
+	position: relative;
+	float: left;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 100px;
+	margin: 0 10px;
+	color: #fff;
+	
+
 
 }
+.stay a{
+	border: 2px solid;
+	width: 30px;
+text-align: center;
+}
+
+.icon::before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 7px 15px;
+	font-size: 16px;
+	bottom: -40px;
+	border-radius: 3px;
+	display: none;
+}
+
+.icon::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	
+}
+
+.icon:hover::after {
+	display: block;
+}
+
+.icon:hover::before {
+	display: block;
+}
+
+.linkedin::before {
+	content: "linkedin";
+}
+
+.youtube::before {
+	content: "youtube";
+}
+
+.facebook::before {
+	content: "facebook";
+}
+
+.twitter::before {
+	content: "twitter";
+}
+
+.icons {
+	margin: 5px;
+}
+
 
 /*блок 7*/
-.stroka{
+.stroka {
 	background-color: #262727;
 	color: #fff;
-		display: flex;
-	justify-content: flex-end;
-}
-
-.lorem{
 	display: flex;
 	justify-content: flex-end;
 }
-@media screen and (max-width:992px) {
 
-	}
-
-
-	@media screen and (max-width:768px) {
-	
-
-	}
-@media screen and (max-width:576px) {
-	
-
-	}
+.lorem {
+	display: flex;
+	justify-content: flex-end;
+}
 
 
+@media screen and (max-width:992px) {}
+
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:576px) {}
