@@ -21,6 +21,8 @@ body {
 	color: #fff;
 }
 
+/* блок 2*/
+
 .banner {
 	background-image: url(images/img-1.jpg);
 	height: 650px;
@@ -130,7 +132,7 @@ button:hover {
 	background-color: #2a5cb5;
 }
 
-/*2 блок*/
+/*3 блок*/
 
 .courses {
 	background-image: url(images/01.png);
@@ -147,40 +149,42 @@ button:hover {
 	position: relative;
 
 }
-.znack:hover{
-	 background-color: #ffc21b;
+
+.anime:hover .znack {
+	background-color: #ffc21b;
 }
 
+.anime:hover {
+	animation: 0.82s anime linear both;
+	color: #1e1e65;
 
-.anime:hover{
-	 animation: 0.82s anime linear  both; 
-	
-color: #1e1e65;
-	
 }
+
 @keyframes anime {
-   
-10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-	
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
 }
 
-
-
-.znack::before {
+.znack::after {
 	content: '';
 	position: absolute;
 	left: 50%;
@@ -188,9 +192,10 @@ color: #1e1e65;
 	bottom: -20px;
 	border: 10px solid transparent;
 	border-top: 10px solid #41416f;
-	
 }
 
+
+/*Блок 4*/
 .courses h4 {
 	color: #41416f;
 	font-weight: bold;
@@ -204,37 +209,54 @@ color: #1e1e65;
 .info {
 	display: flex;
 	align-items: center;
-
 }
 
 .foto img {
 	width: 100%;
+}
+
+.animazija {
+	position: relative;
+}
+
+.animazija:hover img {
+	background-color: #41416f;
+	background: transparent;
+	visibility: hidden;
+}
+
+.animazija:hover .foto {
+	display: block;
+	background-color: #41416f;
+	transition: all 2s ease;
+}
+
+.animazija:hover .text {
+	display: block;
+	transition: all 2s ease;
 
 }
 
-.foto{
-
+.text {
+	position: absolute;
+	left: 30px;
+	bottom: 170px;
+	right: 30px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	display: none;
+	color: #fff;
 }
 
-.foto:hover{
-
-  background-color: #41416f;
- transition: all 2s ease;
- }
-
-.foto:hover img {
- background-color: #41416f;
-  background: transparent;
-  visibility: hidden;
-	
-}
-
-.animazija:hover{
+.animazija:hover {
 	color: #2f2fb5;
 
 }
 
 
+
+/*блок 5*/
 .info p {
 	text-align: center;
 }
@@ -247,9 +269,6 @@ color: #1e1e65;
 	font-style: italic;
 	font-size: 24px;
 }
-
-/*блок 3*/
-
 
 
 .avatar {
@@ -272,7 +291,7 @@ color: #1e1e65;
 	margin: 10px auto;
 }
 
-/*блок 4*/
+/*блок 6*/
 .video {}
 
 .vid_item {
@@ -285,9 +304,7 @@ color: #1e1e65;
 	width: 400px;
 	height: 250px;
 	margin: 50px auto;
-
 }
-
 
 .one ul {
 	display: inline-block;
@@ -296,12 +313,11 @@ color: #1e1e65;
 }
 
 
-
+/*Блок 7*/
 
 .bg_blue {
 	background: #6388cb;
 }
-
 
 ul {
 	text-align: center;
@@ -336,7 +352,7 @@ ul {
 
 
 
-/*блок 5*/
+/*блок 8*/
 
 .email {
 	background-color: #ffc21b;
@@ -362,7 +378,7 @@ ul {
 	background-color: #a0852c;
 }
 
-/*блок 6*/
+/*блок 9*/
 
 .footer {
 	background-color: #0b0b0b;
@@ -389,9 +405,7 @@ ul {
 	margin-right: 5px;
 }
 
-.icons{
-	
-}
+.icons {}
 
 .icon {
 	position: relative;
@@ -402,14 +416,15 @@ ul {
 	bottom: 100px;
 	margin: 0 10px;
 	color: #fff;
-	
+
 
 
 }
-.stay a{
+
+.stay a {
 	border: 2px solid;
 	width: 30px;
-text-align: center;
+	text-align: center;
 }
 
 .icon::before {
@@ -429,7 +444,7 @@ text-align: center;
 	display: block;
 	width: 0;
 	height: 0;
-	
+
 }
 
 .icon:hover::after {
@@ -461,7 +476,7 @@ text-align: center;
 }
 
 
-/*блок 7*/
+/*блок 10*/
 .stroka {
 	background-color: #262727;
 	color: #fff;
