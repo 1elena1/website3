@@ -153,6 +153,9 @@ button:hover {
 .anime:hover .znack {
 	background-color: #ffc21b;
 }
+.anime:hover .znack::after{
+	border-top: 10px solid #ffc21b;
+}
 
 .anime:hover {
 	animation: 0.82s anime linear both;
@@ -192,6 +195,7 @@ button:hover {
 	bottom: -20px;
 	border: 10px solid transparent;
 	border-top: 10px solid #41416f;
+	
 }
 
 
@@ -216,37 +220,39 @@ button:hover {
 }
 
 .animazija {
-	position: relative;
+	
 }
 
-.animazija:hover img {
-	background-color: #41416f;
-	background: transparent;
-	visibility: hidden;
-}
 
 .animazija:hover .foto {
-	display: block;
-	background-color: #41416f;
 	transition: all 2s ease;
+
 }
 
 .animazija:hover .text {
-	display: block;
-	transition: all 2s ease;
+	
+opacity: 1;
+}
 
+.foto{
+		position: relative;
 }
 
 .text {
 	position: absolute;
-	left: 30px;
-	bottom: 170px;
-	right: 30px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	top: 0;
 	text-align: center;
 	font-weight: bold;
 	font-size: 35px;
-	display: none;
+	background-color: #41416f;
 	color: #fff;
+	padding: 40px 0;
+	opacity: 0;
+	transition: opacity 1s ease;
+	font-family: "oswald", sans-serif;
 }
 
 .animazija:hover {
@@ -317,6 +323,7 @@ button:hover {
 
 .bg_blue {
 	background: #6388cb;
+	
 }
 
 ul {
@@ -326,6 +333,7 @@ ul {
 
 .block {
 	margin: 15px;
+	
 }
 
 
@@ -339,7 +347,7 @@ ul {
 	color: #ffc21b;
 	text-align: center;
 	font-style: italic;
-	font-weight: bold;
+	font-family:  'Oswald', sans-serif;
 }
 
 .block button {
@@ -350,6 +358,40 @@ ul {
 }
 
 
+
+.bg_blue:hover{
+background-color: #ffc21b;
+/*animation: bg_blue 3s ease infinite;*/
+animation-name: bg_blue;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+
+}
+
+.bg_blue:hover h3{
+color: #41416f;
+}
+ 
+.bg_blue:hover span{
+	color: #ffc21b;
+}
+
+
+@keyframes bg_blue {
+  from {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
 
 
 /*блок 8*/
@@ -390,7 +432,9 @@ ul {
 	color: #ffc21b;
 
 }
-
+.contact span{
+display: flex;
+}
 
 
 .materials li {
@@ -434,9 +478,10 @@ ul {
 	background-color: rgba(255, 255, 255, 0.8);
 	padding: 7px 15px;
 	font-size: 16px;
-	bottom: -40px;
+	bottom: -55px;
 	border-radius: 3px;
 	display: none;
+	
 }
 
 .icon::after {
@@ -444,7 +489,16 @@ ul {
 	display: block;
 	width: 0;
 	height: 0;
-
+position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    display: none;
+	top: 34px;
+	bottom: 0px;
+	left: 30px;
+	right: 10px;
+	margin-bottom: 10px;
 }
 
 .icon:hover::after {
@@ -481,18 +535,32 @@ ul {
 	background-color: #262727;
 	color: #fff;
 	display: flex;
-	justify-content: flex-end;
+
 }
 
 .lorem {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 }
 
 
-@media screen and (max-width:992px) {}
+@media screen and (max-width:1200px) {
+	.text{
+		padding: 25px 0;
+	}
+}
+@media screen and (max-width:992px) {
+	.text{
+		padding: 70px;
+	}
+}
 
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+	
+}
 
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+
+
+}
