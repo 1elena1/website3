@@ -363,7 +363,7 @@ ul {
 background-color: #ffc21b;
 /*animation: bg_blue 3s ease infinite;*/
 animation-name: bg_blue;
-  animation-duration: 1s;
+  animation-duration: 0.9s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-direction: alternate;
@@ -381,7 +381,7 @@ color: #41416f;
 
 @keyframes bg_blue {
   from {
-    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1, 1, 1);
   }
 
   50% {
